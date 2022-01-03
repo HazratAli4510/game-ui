@@ -12,12 +12,16 @@ const Dashboard = () => {
     const [ViewCommandModalShow, setViewCommandModalShoww] = React.useState(false);
     return (
         <>
+            {/* Adding Header section from header components */}
             <Header modalShow={modalShow} setModalShow={setModalShow} ViewCommandModalShow={ViewCommandModalShow} setViewCommandModalShoww={setViewCommandModalShoww}></Header>
+
+            {/* Main Dashboard section starting from here */}
+
             <section id='full-sec'>
                 <div className="container">
-                    <Row>
+                    <Row className='flex-wrap flex-lg-nowrap'>
 
-                        <Col className='left-side' xs={12} lg={8}>
+                        <Col className='left-side' xs={12} lg={7}>
                             <div className="box d-flex justify-content-center align-items-center">
                                 <div className="img">
                                     <img src={rocket} alt="" />
@@ -28,13 +32,16 @@ const Dashboard = () => {
                                 <div className="top"></div>
                                 <form>
                                     <div className="group d-flex justify-content-between p-3">
-                                        <textarea className='p-2' placeholder='Command...' cols="90" rows="2"></textarea>
+                                        <textarea className='p-2' placeholder='Command...' cols="90" rows="3"></textarea>
                                         <div className="btn">
                                             <button className='dashboard-submit-btn btn shadow-none' type='submit'><img src={submitIcon} alt="" /></button>
                                         </div>
                                     </div>
                                 </form>
                             </div>
+                        </Col>
+
+                        <Col className='abc d-none d-lg-block' lg={1}>
                         </Col>
 
                         <Col className='right-side' xs={12} lg={4}>

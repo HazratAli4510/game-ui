@@ -6,16 +6,22 @@
 section#full-sec .left-side ,section#full-sec .right-side{
     margin-top: 45px;
 }
+
+.abc{
+    min-height: 86.5vh;
+    border-right:  1px solid rgba(0, 0, 0, 0.2);
+    width: 90px !important;
+}
+
 section#full-sec .container .box{
     background-color: #FFFFFF;
     padding: 20px 0;
     border-radius: 10px;
-    margin-right: 90px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
 
 section#full-sec .container .small-box{
-    margin-right: 90px;
+    
     margin-top: 45px;
     background-color: #FFFFFF;
     border-radius: 0px 0px 5px 5px;
@@ -44,7 +50,7 @@ section#full-sec .container .small-box .top{
 
 
 section#full-sec .container .right-side{
-    padding-left: 50px;
+    padding-left: 75px;
 }
 section#full-sec .container .right-side .texts{
     word-wrap: break-word;
@@ -85,15 +91,7 @@ section#full-sec .container .right-side #undo , section#full-sec .container .rig
 }
 
 
-/* Responsive before 1399px */
-@media (max-width: 1399px) {
-    section#full-sec .container .right-side .btn-group button.export {
-        margin: 0 30px;
-    }
-    section#full-sec .container .right-side .btn-group button.export {
-        margin: 0 15px;
-    }
-}
+
 
 
 /* Responsive before 1199px */
@@ -101,18 +99,17 @@ section#full-sec .container .right-side #undo , section#full-sec .container .rig
     section#full-sec .container .right-side {
         padding-left: 25px;
     }
+    section#full-sec .container .right-side .btn-group button.export {
+        margin: 0 20px;
+    }
 }
 
 
 /* Responsive before 991px */
 @media (max-width: 991px) {
-    section#full-sec .container .box , section#full-sec .container .small-box{
-        margin-right: 0px;
+    .btn-group-2{
+        margin-bottom: 144px;
     }
-    .btn-group, .btn-group-vertical {
-        margin-bottom: 25px;
-    }
-    
 }
 
 /* Responsive before 575px */
@@ -123,6 +120,13 @@ section#full-sec .container .right-side #undo , section#full-sec .container .rig
     }
     .dashboard-submit-btn{
         padding: 0 !important;
+    }
+    
+    section#full-sec .container .right-side {
+        padding: 0 34px;
+    }
+    section#full-sec .left-side{
+        padding: 0 34px;
     }
     
 }

@@ -1,0 +1,31 @@
+.share-modal-box{
+    padding:24px 30px !important;
+    padding-bottom: 50px !important;
+}
+.share-modal-box h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 29.26px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.share-modal-box p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 17.07px;
+    color: #000000;
+}
+
+.share-modal-box input{
+    height: 35px;
+    border: 1px solid black;
+    outline-color: 1px solid #000000;
+    background-color: white !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+.share-modal-box input:focus{
+    border: 1px solid black;
+    outline-color: 1px solid #000000;
+}

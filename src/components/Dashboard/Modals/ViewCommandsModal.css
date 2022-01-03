@@ -1,0 +1,28 @@
+.commandBox{
+    background-color: #F3F4F6;
+    padding: 10px;
+    word-wrap: break-word;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.commandBox ul li{
+    font-family: "menalo";
+   margin-bottom: 10px;
+   font-size: .9rem;
+}
+.commandDownloadBtn{
+    margin-top: 30px;
+}
+.commandDownloadBtn button{
+    background-color: #6366F1;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size:1rem;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.commandDownloadBtn button:hover{
+    background-color: #6366F1;
+    color: #FFFFFF;
+}

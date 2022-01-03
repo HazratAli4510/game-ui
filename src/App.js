@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Dashboard from './components/Dashboard/Dashboard';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import V3 from './components/Dashboard/V3/V3';
 
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Dashboard />} />
+        </Routes>
+        <Routes>
+          <Route path='/v3' element={<V3 />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

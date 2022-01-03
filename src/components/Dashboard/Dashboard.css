@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "menalo";
+    src: url(../../font/Menlo-Regular.ttf);
+}
+
+section#full-sec .left-side ,section#full-sec .right-side{
+    margin-top: 45px;
+}
+section#full-sec .container .box{
+    background-color: #FFFFFF;
+    padding: 20px 0;
+    border-radius: 10px;
+    margin-right: 90px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+section#full-sec .container .small-box{
+    margin-right: 90px;
+    margin-top: 45px;
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+section#full-sec .container .small-box textarea{
+    resize:unset;
+    border: none;
+    outline: none;
+    background-color: #F3F4F6;
+    border-radius: 5px;
+    color: #202A37;
+    font-family: 'Montserrat', sans-serif;
+}
+section#full-sec .container .small-box button{
+    margin-right: -10px;
+}
+section#full-sec .container .small-box .top{
+    background-color: #202A37;
+    height: 35px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+
+/*---------- Right side----------------- */
+
+
+section#full-sec .container .right-side{
+    padding-left: 50px;
+}
+section#full-sec .container .right-side .texts{
+    word-wrap: break-word;
+}
+section#full-sec .container .right-side .btn-group button{
+    border: 1px solid #6366F1;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(32, 42, 55, 0.5);
+    font-weight: 500;
+}
+section#full-sec .container .right-side .btn-group button.export{
+    margin: 0 40px
+}
+
+section#full-sec .container .right-side p{
+    font-family: "menalo";
+    font-size: 12px;
+    color: black;
+    margin-top: 42px;
+    width: 100%;
+}
+
+section#full-sec .container .right-side .btn-group2 button{
+    background-color: black !important;
+}
+
+section#full-sec .container .right-side #undo , section#full-sec .container .right-side #redo , section#full-sec .container .right-side #edit{
+    background-color: rgba(32, 42, 55, 0.5);
+    color: white !important;
+    border: 0 !important;
+    color: rgba(255, 255, 255, 1);
+}
+
+.btn{
+    font-size: 14px !important;
+}
+
+
+/* Responsive before 1399px */
+@media (max-width: 1399px) {
+    section#full-sec .container .right-side .btn-group button.export {
+        margin: 0 30px;
+    }
+    section#full-sec .container .right-side .btn-group button.export {
+        margin: 0 15px;
+    }
+}
+
+
+/* Responsive before 1199px */
+@media (max-width: 1399px) {
+    section#full-sec .container .right-side {
+        padding-left: 25px;
+    }
+}
+
+
+/* Responsive before 991px */
+@media (max-width: 991px) {
+    section#full-sec .container .box , section#full-sec .container .small-box{
+        margin-right: 0px;
+    }
+    .btn-group, .btn-group-vertical {
+        margin-bottom: 25px;
+    }
+    
+}
+
+/* Responsive before 575px */
+@media (max-width: 575px) {
+    .rightSIde{
+        display: flex;
+        justify-content: center;
+    }
+    .dashboard-submit-btn{
+        padding: 0 !important;
+    }
+    
+}

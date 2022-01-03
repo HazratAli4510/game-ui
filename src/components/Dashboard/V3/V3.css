@@ -1,0 +1,10 @@
+#v3 .box{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+@media (max-width: 575px){
+    #v3 .box{
+        width: 90% !important;
+    }
+}
